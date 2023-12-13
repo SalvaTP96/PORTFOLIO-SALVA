@@ -673,6 +673,7 @@ footer .cols .contact-col form button i{
 
     .navbar ul{
         gap: 15px;
+        margin-left: -35px;
     }
 
     .navbar h2{
@@ -680,7 +681,7 @@ footer .cols .contact-col form button i{
     }
 
     .navbar ul li a{
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
@@ -689,7 +690,7 @@ footer .cols .contact-col form button i{
     }
 
     .main p.title{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .main p.subtitle{
@@ -702,7 +703,7 @@ footer .cols .contact-col form button i{
     }
 
     .guarantee .item .info p{
-        font-size: 14px;
+        font-size: 13px;
     }
 
 
