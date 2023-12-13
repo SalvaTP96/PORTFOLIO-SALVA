@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
-
+html{
+    min-width: 360px;
+}
 
 body{
     background: linear-gradient(45deg, rgb(0, 0, 0), black, orange, black);
@@ -170,9 +171,36 @@ body{
 }
 
 .formulario input{
-    width: 80%;
+    width: 300px;
     padding: 1em;
     border-radius: 10px;
+}
+
+.formulario textarea{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.formulario input::placeholder{
+    padding-left: 10px;
+}
+.formulario textarea::placeholder{
+    padding-left: 10px;
+}
+
+.formulario button{
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 18px;
+    border: 1px solid black;
+    background-color: #ffb742;
+    font-size: 16px;
+    transition: .5s ease-in-out;
+}
+
+.formulario button:hover{
+    background-color: #fb8c00;
+
 }
 
 footer{
@@ -314,4 +342,68 @@ footer .cols .contact-col form button:hover{
 
 footer .cols .contact-col form button i{
     font-size: 26px;
+}
+
+@media  screen and (max-width: 1150px) {
+    .container .imagen{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+    }
+
+    .container .formulario{
+        width: 90%;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+
+    footer .start{
+        width: 90%;
+        left: 5%;
+        top: -20%;
+
+    }
+
+    footer .cols{
+
+        flex-wrap: wrap;
+    }
+
+    footer .cols .about-cols{
+        flex-basis: 50%;
+    }
+
+    footer .cols .links-col{
+        flex-basis: 50%;
+    }
+
+    footer .cols .contact-col{
+        flex-basis: 50%;
+    }
+}
+
+@media screen  and (max-width: 780px) {
+
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar ul li a{
+        font-size: 15px;
+    }
+
+    .navbar h2{
+        display: none;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
 }
