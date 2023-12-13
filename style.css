@@ -632,7 +632,7 @@ footer .cols .contact-col form button i{
         font-size: 15px;
     }
 
-    .navbar button{
+    .navbar .botones{
         display: none;
     }
 
@@ -678,7 +678,7 @@ footer .cols .contact-col form button i{
     }
 
     .navbar ul li a{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .main h4{
