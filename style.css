@@ -17,11 +17,60 @@ body{
     animation: cambiar 10s ease infinite;
 }
 
-.switch{
-    display: inline-block;
-    height: 34px;
-    width: 60px;
-    
+
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar h2{
+    color:#ffb742;
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar ul li{
+    list-style: none;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.5s all ease;
+}
+
+.navbar ul li a:hover{
+    color: #ffb742;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.navbar ul li:last-child a {
+    margin: 0px;
 }
 
 .switch input{
@@ -82,57 +131,6 @@ input:checked + .slider:before{
     0%{background-position: 0 50%;}
     50%{background-position: 100% 50%;}
     100%{background-position: 0 50%;}
-}
-
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    padding: 0 50px;
-    background: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    width: 100%;
-    top: 0;
-
-}
-
-.navbar a{
-    text-decoration: none;
-}
-
-.navbar h2{
-    color:#ffb742;
-    font-weight: 600;
-}
-
-.navbar ul{
-    display: flex;
-    align-items: center;
-}
-
-.navbar ul li{
-    list-style: none;
-
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    margin-right: 25px;
-    transition: 0.5s all ease;
-}
-
-.navbar ul li a:hover{
-    color: #ffb742;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.navbar ul li:last-child a {
-    margin: 0px;
 }
 
 
@@ -673,12 +671,17 @@ footer .cols .contact-col form button i{
         justify-content: center;
     }
 
+    .navbar ul{
+        gap: 15px;
+    }
+
     .navbar h2{
         display: none;
     }
 
     .navbar ul li a{
         font-size: 12px;
+
     }
 
     .main h4{
