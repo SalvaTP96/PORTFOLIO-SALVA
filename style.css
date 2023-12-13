@@ -6,7 +6,9 @@
 
 }
 
-
+html{
+    min-width: 360px;
+}
 
 body{
     background: linear-gradient(45deg, rgb(0, 0, 0), black, orange, black);
@@ -93,6 +95,10 @@ input:checked + .slider:before{
     width: 100%;
     top: 0;
 
+}
+
+.navbar a{
+    text-decoration: none;
 }
 
 .navbar h2{
@@ -431,6 +437,10 @@ footer .start{
     width: 70%;
     top: -16%;
     left: 15%;
+}
+
+footer .start a{
+    text-decoration: none;
 }
 
 footer .start p{
