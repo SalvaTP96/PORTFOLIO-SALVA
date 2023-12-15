@@ -85,7 +85,7 @@ body{
     padding: 10px;
     width: 40px;
     height: 14px;
-    background-image: url(images/Bandera_de_España_\(sin_escudo\).svg.png);
+    background-image: url(images/Bandera_de_España_\(sin_escudo\).svg.webp);
     background-size: contain;
     transition: 0.3s;
     border-radius: 34px;
@@ -105,7 +105,7 @@ body{
 }
 
 input:checked + .slider{
-    background-image: url(images/istockphoto-479199262-612x612.jpg);
+    background-image: url(images/istockphoto-479199262-612x612.webp);
     background-size: contain;
 }
 
