@@ -481,8 +481,6 @@ footer .start button:hover{
 footer .cols{
     display: flex;
     align-items: start;
-
-
 }
 
 footer .cols .about-cols{
@@ -495,7 +493,7 @@ footer .cols .about-cols h3{
 }
 
 footer .cols .about-cols p{
-    color: #ccc;
+    color: #ffffff;
     font-size: 13px;
 }
 
@@ -504,14 +502,14 @@ footer .cols .links-col{
 }
 
 footer .cols .links-col h4{
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 footer .cols .links-col a{
     display: block;
     text-decoration: none;
-    color: #7b7b7b;
+    color: #ffffff;
     font-size: 14px;
     line-height: 26px;
     transition: color 0.3s ease;
