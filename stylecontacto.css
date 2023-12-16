@@ -28,7 +28,7 @@ body{
     justify-content: space-between;
     height: 80px;
     padding: 0 50px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
@@ -53,7 +53,7 @@ body{
 .navbar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 25px;
     transition: 0.5s all ease;
     position: relative;
@@ -229,6 +229,19 @@ footer{
     margin-top: 100px;
 }
 
+footer .start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #ffb742;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 70%;
+    top: -19%;
+    left: 15%;
+}
+
 footer .cols{
     display: flex;
     align-items: start;
@@ -306,10 +319,7 @@ footer .cols .contact-col .email p{
     }
 
     footer .start{
-        width: 90%;
-        left: 5%;
-        top: -20%;
-
+        top: -10%;
     }
 
     footer .cols{
@@ -337,7 +347,7 @@ footer .cols .contact-col .email p{
     }
 
     .navbar ul li a{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .navbar h2{

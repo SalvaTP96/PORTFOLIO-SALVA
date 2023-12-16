@@ -28,7 +28,7 @@ body{
     justify-content: space-between;
     height: 80px;
     padding: 0 50px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,7 +59,7 @@ body{
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.5s all ease;
     position: relative;
     display: flex;
@@ -662,14 +662,25 @@ footer .cols .contact-col .email p{
     }
 }
 
-@media screen  and (max-width: 780px) {
+@media screen and (max-width: 900px){
 
-    .navbar ul li a{
-        font-size: 16px;
+    .navbar{
+        justify-content: center;
     }
 
     .navbar .botones{
         display: none;
+    }
+
+    .navbar h2{
+        display: none;
+    }
+}
+
+@media screen  and (max-width: 780px) {
+
+    .navbar ul li a{
+        font-size: 18px;
     }
 
     .main h4{
@@ -716,10 +727,6 @@ footer .cols .contact-col .email p{
     .navbar ul{
         gap: 15px;
         margin-left: -35px;
-    }
-
-    .navbar h2{
-        display: none;
     }
 
     .main h4{
