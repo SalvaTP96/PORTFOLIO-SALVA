@@ -17,7 +17,6 @@
         <h2>Salvador Tomas</h2>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Skills</a></li>
             <li><a href="portfolio.html">Trabajos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="#">Sobre mi</a></li>
@@ -30,14 +29,18 @@
 
     <div class="container">
         <div class="imagen">
-            <img src="images/imagenprincipal3.webp" alt="">
+            <img src="images/imagenprincipal3.jpg" alt="#">
         </div>
         <form class="formulario" action="https://formsubmit.co/salvatp96@gmail.com" method="POST">
             <h3>Contacta conmigo</h3>
             
+            <label for="idea">Nombre</label>
             <input type="text" name="name" id="name" placeholder="Nombre">
+            <label for="idea">Email</label>
             <input type="email" name="email" id="email" placeholder="Email">
+            <label for="idea">Numero</label>
             <input type="phone" name="phone" id="number" placeholder="Número de teléfono">
+            <label for="idea">Tu idea</label>
             <textarea name="idea" id="idea" cols="60" rows="10" placeholder="Cuéntame lo que necesitas"></textarea>
             <button type="submit">ENVIAR</button>
         </form>
@@ -49,19 +52,6 @@
 
     <footer>
 
-        <div class="start">
-            
-            <div class="whatsapp">
-                <a href="http://" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-            </div>
-
-            <div class="email">
-                <i class='bx bx-envelope' ></i>
-                <p>salvatp96@outlook.es</p>
-            </div>
-
-        </div>
-
         <div class="cols">
 
             <div class="about-cols">
@@ -70,28 +60,26 @@
             </div>
 
             <div class="links-col">
-                <h4>Enlaces utiles</h4>
+                <h3>Enlaces utiles</h3>
                 <a href="index.html">Inicio</a>
-                <a href="#">Skills</a>
-                <a href="portfolio.html">Portfolio</a>
+                <a href="portfolio.html">Trabajos</a>
                 <a href="contacto.html">Contacto</a>
                 <a href="#">Sobre mi</a>
             </div>
 
             <div class="links-col">
-                <h4>Redes Sociales</h4>
+                <h3>Redes Sociales</h3>
                 <a href="https://www.instagram.com/salvatp_96/" target="_blank"><i class='bx bxl-instagram-alt bx-md'></i>Instagram</a>
                 <a href="https://www.linkedin.com/in/salvatomas96/" target="_blank"><i class='bx bxl-linkedin bx-md' ></i>Linkedin</a>
                 <a href="https://github.com/SalvaTP96" target="_blank"><i class='bx bxl-github bx-md' ></i>Github</a>
             </div>
 
             <div class="contact-col">
-                <h4>Si lo deseas deja tu correo y contactaré contigo</h4>
-
-                <form action="https://formsubmit.co/salvatp96@gmail.com" method="POST">
-                    <input type="email" placeholder="Tu email">
-                    <button><i class='bx bxl-telegram'></i></button>
-                </form>
+                <h3 id="esp-text">Mi correo</h3>
+                <div class="email">
+                    <i class='bx bx-envelope'></i>
+                    <p>salvatp96@outlook.es</p>
+                </div>                
             </div>
 
         </div>

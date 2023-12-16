@@ -53,16 +53,31 @@ body{
 .navbar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 25px;
     transition: 0.5s all ease;
+    position: relative;
 }
 
-.navbar ul li:hover a{
-    color: #ffb742;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+.navbar li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #EDAA18;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .4s ease-in-out;
+}
+
+.navbar li a:hover{
+    color: #EDAA18;
+}
+
+.navbar li a:hover::before{
+    transform-origin: center;
+    transform: scaleX(1.2);
 }
 
 .navbar ul li:last-child a {
@@ -163,6 +178,10 @@ body{
     border-radius: 10px;
 }
 
+.formulario label{
+    display: none;
+}
+
 .formulario h3{
     color: #ffb742;
     font-size: 25px;
@@ -208,86 +227,37 @@ footer{
     background: #1c1c1c;
     padding: 80px 50px 40px;
     margin-top: 100px;
-
 }
-footer .start{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    background-color: #ffb742;
-    padding: 30px 25px;
-    border-radius: 15px;
-    width: 70%;
-    top: -16%;
-    left: 15%;
-}
-
-footer .start .whatsapp a i{
-    color: #1c1c1c;
-    font-size: 60px;
-    transition: 0.5s all ease ;
-}
-
-footer .start .whatsapp a i:hover{
-    color: #ffffff;
-}
-
-footer .start .email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-footer .start .email i{
-    color: #1c1c1c;
-    font-size: 40px;
-}
-
-footer .start .email p{
-    font-size: 16px;
-    
-    color: #1c1c1c;
-}
-
-
 
 footer .cols{
     display: flex;
     align-items: start;
-    margin-top: 20px;
-
 }
 
 footer .cols .about-cols{
     flex: 3;
 }
 
-footer .cols .about-cols h3{
+footer .cols h3{
     color: #ffb742;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 footer .cols .about-cols p{
-    color: #ccc;
-    font-size: 13px;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 footer .cols .links-col{
     flex: 3;
 }
 
-footer .cols .links-col h4{
-    color: #fff;
-    margin-bottom: 20px;
-}
-
 footer .cols .links-col a{
     display: block;
     text-decoration: none;
-    color: #7b7b7b;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 16px;
     line-height: 26px;
     transition: color 0.3s ease;
 }
@@ -300,48 +270,20 @@ footer .cols .contact-col{
     flex: 3;
 }
 
-footer .cols .contact-col h4{
-    color: #fff;
-}
-
-footer .cols .contact-col form{
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
-
-footer .cols .contact-col form input{
-    width: 100%;
-    background: #212529;
-    border: none;
-    padding: 13px;
-    border-radius: 100px;
-    font-weight: 400px;
-    font-size: 13px;
-}
-
-footer .cols .contact-col form button{
+footer .cols .contact-col .email{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: #ffb742;
-    border: none;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    flex-wrap: nowrap;
+    gap: 10px;
+    color: white;
 }
 
-footer .cols .contact-col form button:hover{
-    background-color: #fb8c00;
+footer .cols .contact-col .email i{
+    font-size: 40px;
 }
 
-footer .cols .contact-col form button i{
-    font-size: 26px;
+footer .cols .contact-col .email p{
+    font-size: 16px;
 }
 
 @media  screen and (max-width: 1150px) {
@@ -395,7 +337,7 @@ footer .cols .contact-col form button i{
     }
 
     .navbar ul li a{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .navbar h2{
