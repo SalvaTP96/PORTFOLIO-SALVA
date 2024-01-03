@@ -342,7 +342,7 @@ input:checked + .slider:before{
     align-items: center;
 }
 
-.guarantee .item .info h3{
+.guarantee .item .info h1{
     color: #ffb742;
     font-size: 20px;
 }
@@ -395,7 +395,7 @@ section{
 
 }
 
-.about .info h3{
+.about .info h1{
     color: #fff;
     font-size: 32px;
     font-weight: 600;
@@ -427,7 +427,7 @@ section{
     width: 680px;
 }
 
-.skills .left .info h3{
+.skills .left .info h1{
     color: #fff;
     font-size: 30px;
     margin-bottom: 20px;
@@ -500,6 +500,10 @@ footer .start{
     left: 15%;
 }
 
+footer .start h1{
+    font-size: 24px;
+}
+
 footer .start a{
     text-decoration: none;
 }
@@ -542,7 +546,7 @@ footer .cols .about-cols{
     flex: 3;
 }
 
-footer .cols h3{
+footer .cols h1{
     color: #ffb742;
     margin-bottom: 20px;
     margin-top: 30px;
