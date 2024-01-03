@@ -224,7 +224,7 @@ input:checked + .slider:before{
     margin-bottom: 50px;
 }
 
-.main h4{
+.main h1{
     font-size: 32px;
     color: #fff;
     font-weight: 600;   
@@ -683,7 +683,7 @@ footer .cols .contact-col .email p{
         font-size: 18px;
     }
 
-    .main h4{
+    .main h1{
         font-size: 24px;
     }
 
@@ -729,7 +729,7 @@ footer .cols .contact-col .email p{
         margin-left: -35px;
     }
 
-    .main h4{
+    .main h1{
         font-size: 22px;
     }
 
