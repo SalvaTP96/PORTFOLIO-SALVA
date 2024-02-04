@@ -111,14 +111,6 @@ body{
     margin-top: 8px;    
 }
 
-.main p.subtitle{
-    font-size: 16px;
-    color: #ffffff;
-    margin-top: 20px;
-    text-align: center;
-
-}
-
 .main img{
     width: 450px;
     border-radius: 50%;
@@ -238,7 +230,6 @@ body{
 
 .trabajos h1 {
     color: white;
-    text-transform: uppercase;
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 200px;
@@ -309,10 +300,6 @@ body{
     transform: rotate(-5deg);
 }
 
-.trabajos .derecha:hover  img{
-    transform: rotate(5deg);
-}
-
 .trabajos .proyecto .contenido-proyecto .texto-proyecto{
     display: flex;
     justify-content: center;
@@ -321,6 +308,9 @@ body{
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+
 }
 
 .trabajos .proyecto .contenido-proyecto .texto-proyecto .items-proyecto{
@@ -507,6 +497,14 @@ footer .cols .contact-col .email p{
         flex-basis: 49%;
     }
 
+    .trabajos .proyecto .contenido-proyecto{
+        flex-direction: column;
+    }
+
+    .trabajos .proyecto:hover  img{
+        transform: rotate(0deg);
+    }
+
     .skills{
         justify-content: space-between;
         gap: 20px;
@@ -550,25 +548,17 @@ footer .cols .contact-col .email p{
     
 }
 
-@media screen and (max-width: 900px){
-
-    .navbar{
-        justify-content: center;
-    }
-
-    .navbar .botones{
-        display: none;
-    }
-
-    .navbar h2{
-        display: none;
-    }
-}
-
 @media screen  and (max-width: 780px) {
 
     .navbar ul li a{
         font-size: 20px;
+    }
+
+    .trabajos .proyecto{
+        padding: 30px;
+    }
+    .trabajos .proyecto .contenido-proyecto img{
+        width: 500px;
     }
 
     footer .start h2{
@@ -623,15 +613,11 @@ footer .cols .contact-col .email p{
     }
 
     .main h1{
-        font-size: 22px;
+        font-size: 1.5rem;
     }
 
     .main p.title{
-        font-size: 30px;
-    }
-
-    .main p.subtitle{
-        font-size: 12px;
+        font-size: 1.9rem;
     }
 
     .main img{
@@ -648,6 +634,28 @@ footer .cols .contact-col .email p{
         font-size: 13px;
     }
 
+    .trabajos h1{
+        font-size: 1.5em;
+        margin-bottom: 100px;
+    }
+
+    .trabajos .proyecto{
+        padding: 5px;
+    }
+
+    .trabajos .proyecto .contenido-proyecto img{
+        width: 400px;
+    }
+
+    .trabajos .proyecto h2{
+        font-size: 1.3rem;
+        padding-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .trabajos .proyecto .contenido-proyecto .texto-proyecto{
+        font-size: 0.9rem;
+    }
 
     .skills{
         flex-wrap: wrap;
@@ -693,6 +701,10 @@ footer .cols .contact-col .email p{
 @media screen and (max-width:450px){
     .main p.title{
         font-size: 28px;
+    }
+
+    .trabajos .proyecto .contenido-proyecto img{
+        width: 350px;
     }
 }
 
