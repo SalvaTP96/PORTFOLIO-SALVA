@@ -11,59 +11,39 @@
 
 
 <body>
-
-    <div class="navbar navbar-default navbar-fixed-top" >
-
-        <h2>Salvador Tomas</h2>
-        <ul>
-            <li id="esp-text"><a href="index.html">Inicio</a></li>
-            <li id="esp-text"><a href="trabajos.html">Trabajos</a></li>
-            <li id="esp-text"><a href="contacto.html">Contacto</a></li>
-            <li id="esp-text"><a href="sobre-mi.html">Sobre mi</a></li>
-            <!--ENGLISH TEXT-->
-            <li id="english-text"><a href="index.html">Home</a></li>
-            <li id="english-text"><a href="works.html">Works</a></li>
-            <li id="english-text"><a href="contact.html">Contact</a></li>
-            <li id="english-text"><a href="about-me.html">About me</a></li>
-            <li>
-                <div class="toggle container">
-                    <label class="switch">
-                    <input type="checkbox" id="toggle">
-                    <span class="slider round"></span>
-                    </label>
+    <section  id="inicio">
+        <div class="navbar navbar-default navbar-fixed-top" >
+            <ul>
+                <li id="esp-text"><a href="#inicio">Inicio</a></li>
+                <li id="esp-text"><a href="#trabajos">Proyectos</a></li>
+                <li id="esp-text"><a href="sobre-mi.html">Sobre mi</a></li>
+                <li id="esp-text"><a href="contacto.html">Contacto</a></li>
+                
+            </ul>     
+        </div>
+    </section>
+    
+    
+    
+    <section id="main">
+        <div class="main">
+                <h1 id="esp-text">Hola, soy <span>SALVA&#9996;&#65039</span></h1>
+                <p class="title" id="esp-text">Desarrollador Web Front End</p>
+                <div class="imagen-principal">            
+                        <img src="/images/imagenprincipal2.jpg" alt="imagen2">
                 </div>
-            </li>   
-        </ul>     
-    
-        <div class="botones">
-            <a href="contacto.html"><button class="hire-btn"  id="esp-text"><p>Contrátame</p></button></a>
-            <a href="contacto-ingles.html"><button class="hire-btn" id="english-text"><p>Hire me</p></button></a>
+
+                <div class="enlaces">
+                    <a href="https://www.instagram.com/salvatp_96/" target="_blank"><box-icon name='instagram-alt' type='logo' color='#ffffff' ></box-icon></a>
+                    <a href="https://www.linkedin.com/in/salvatomas96/" target="_blank"><box-icon name='linkedin' type='logo' color="#ffffff"></box-icon></a>
+                    <a href="https://github.com/SalvaTP96" target="_blank"><box-icon type='logo' name='github' color="#ffffff"></box-icon></a>
+                </div>
         </div>
-        
-    </div>
-    
+    </section>
     
 
-    <div class="main">
-        <h1 id="esp-text">Hola, soy <span>SALVA&#9996;&#65039</span></h1>
-        <h1 id="english-text">Hi, I'm <span>SALVA&#9996;&#65039</span></h1>
-        <p class="title" id="esp-text">Desarrollador Web Front End</p>
-        <p class="title" id="english-text">Front End Web Developer</p>
-        <p class="subtitle" id="esp-text">Desarrollador Web en desarrollo amante</br>de la tecnologia</p>
-        <p class="subtitle" id="english-text">Web Developer who</br> loves technology</p>
-
-        <div class="imagen-principal">            
-                <img src="/images/imagenprincipal2.jpg" alt="imagen2">
-        </div>
-
-        <div class="enlaces">
-            <a href="https://www.instagram.com/salvatp_96/" target="_blank"><box-icon name='instagram-alt' type='logo' color='#ffffff' ></box-icon></a>
-            <a href="https://www.linkedin.com/in/salvatomas96/" target="_blank"><box-icon name='linkedin' type='logo' color="#ffffff"></box-icon></a>
-            <a href="https://github.com/SalvaTP96" target="_blank"><box-icon type='logo' name='github' color="#ffffff"></box-icon></a>
-        </div>
-    </div>
-
-    <div class="guarantee">
+    <section id="guarantee">
+        <div class="guarantee">
 
         <div class="item">
             <div class="icon">
@@ -72,7 +52,6 @@
             <div class="info">
                 <h1>+4</h1>
                 <p id="esp-text">Meses de experiencia</p>
-                <p id="english-text">Months of experience</p>
             </div>
         </div>
 
@@ -82,42 +61,85 @@
             </div>
             <div class="info">                
                 <h1>+1</h1>
-                <p id="esp-text">Proyectos realizados</p>                
-                <p id="english-text">Fullfilled projects</p>                
+                <p id="esp-text">Proyectos realizados</p>                              
             </div>
         </div>
-    </div>
+        </div>
+    </section>
 
-    <section>
+    
 
-        <h1>MIS Proyectos</h1>
+    <section class="trabajos" id="trabajos">
 
-        <div class="container">
+        <h1><box-icon name='code-alt' color='#719af4' size="lg" ></box-icon>MIS Proyectos</h1>
+
+        <div class="wrap-proyecto">
+            
+            <div class="proyecto izquierda budo">
                 
-            <div class="proyecto">
-                <img src="images/budo.webp" alt="">
-                <b></b>
-                <div class="content">
-                    <p class="title">sitio web para<br><span>Cafetería Budo</span></p>
-                    <ul class="sci">
-                        <li>
-                        <a href="#"><box-icon name='github' type='logo' color='#ffffff' size="lg"></box-icon></a>
-                        </li>
+                <h2>CAFETERIA BUDO</h2>
                 
-                        <li>
-                        <a href="#"><box-icon name='link' type='logo' color='#ffffff' size="lg"></box-icon></a>
-                        </li>
-                    </ul>
-                    <p class="title">Tecnologías utilizadas</p>
-                    <ul class="sci">
-                        <li><box-icon name='html5' type='logo' color='#ffffff' size="lg"></box-icon></li>
-                        <li><box-icon name='css3' type='logo' color='#ffffff' size="lg"></box-icon></li>
-                        <li><box-icon name='javascript' type='logo' color='#ffffff' size="lg"></box-icon></li>
-                        <li><box-icon name='jquery' type='logo' color='#ffffff' size="lg"></box-icon></li>
-                    </ul>
-                </div>
-            </div>                                
-        </div> 
+                <div class="contenido-proyecto">
+                    
+                    <div class="imagen-proyecto">
+                        <img src="images/budo.webp" alt="">
+                    </div>
+                    
+                    <div class="texto-proyecto">
+
+                        <p>Página web para Cafetería Budo. Este fue mi primer proyecto que realicé al terminar los cursos de HTML y CSS para poner en práctica lo aprendido, el cuál fui mejorando con el paso de las semanas al ir adquiriendo mas conocimientos sobre las tecnologías utilizadas para el desarrollo.</p>
+
+                        <h3>Tecnologías utilizadas:</h3>
+
+                        <div class="items-proyecto">
+
+                            <div class="item-proyecto">
+                                <box-icon name='html5' type='logo' color='#ffffff'></box-icon>
+                            </div>
+
+                            <div class="item-proyecto">
+                                <box-icon name='css3' type='logo' color='#ffffff' ></box-icon>  
+                            </div> 
+                        </div>                                            
+                    </div>                
+                </div>            
+            </div>
+
+            <div class="proyecto derecha">
+                
+                <h2>CAFETERIA BUDO</h2>
+                
+                <div class="contenido-proyecto">
+                    
+                    <div class="texto-proyecto">
+
+                        <p>Página web para Cafetería Budo. Este fue mi primer proyecto que realicé al terminar los cursos de HTML y CSS para poner en práctica lo aprendido, el cuál fui mejorando con el paso de las semanas al ir adquiriendo mas conocimientos sobre las tecnologías utilizadas para el desarrollo.</p>
+
+                        <h3>Tecnologías utilizadas:</h3>
+
+                        <div class="items-proyecto">
+
+                            <div class="item-proyecto">
+                                <box-icon name='html5' type='logo' color='#ffffff'></box-icon>
+                            </div>
+
+                            <div class="item-proyecto">
+                                <box-icon name='css3' type='logo' color='#ffffff' ></box-icon>  
+                            </div> 
+                        </div>                                            
+                    </div>
+                    
+                    <div class="imagen-proyecto">
+                        <img src="images/budo.webp" alt="">
+                    </div>                
+                </div>            
+            </div>
+        </div>
+
+        
+        
+
+        
     </section>
     
 
@@ -125,8 +147,7 @@
     <div class="skills">
         <div class="left">
             <div class="info">
-                <h1 id="esp-text">¿Qué habilidades tengo?</h1>
-                <h1 id="english-text">What skills i do thing?</h1>
+                <h1>Sobre mi</h1>
                 <p>
                     Lorem, ipsum dolor sit amet 
                     consectetur adipisicing elit. Aperiam 
@@ -182,12 +203,8 @@
 
         <div class="start">
             <h1 id="esp-text">Comenzar un proyecto</h1>
-            <h1 id="english-text">Start project</h1>
             <p id="esp-text">¿Te interesa trabajar juntos? Cuéntame lo que quieres y voy comprando café!<span>&#9749</span></p>
-            <p id="english-text">Are you interested in working with me? Tell me what you want and I'll boy coffee<span>&#9749</span></p>
             <a href="contacto.html"><button id="esp-text">¡Hagámoslo!</button></a>
-            <a href="contacto-ingles.html"><button id="english-text">Let's do it!</button></a>
-
         </div>
 
         <div class="cols">
@@ -195,35 +212,17 @@
             <div class="about-cols">
                 <h1>Salvador Tomas</h1>
                 <p id="esp-text">Desarrollador Web Front End</p>
-                <p id="english-text">Front End Web Developer</p>
             </div>
 
             <div class="links-col">
-                <h1 id="esp-text">Enlaces útiles</h1>
-                <h1 id="english-text">Links</h1>
-                <a id="esp-text" href="index.html">Inicio</a>
-                <a id="esp-text" href="trabajos.html">Trabajos</a>
-                <a id="esp-text" href="contacto.html">Contacto</a>
-                <a id="esp-text" href="index.html">Home</a>
-                <a id="english-text" href="works.html">Works</a>
-                <a id="english-text" href="contact.html">Contact</a>
-                <a id="english-text" href="about-me.html">About me</a>
-                <a id="english-text" href="sobre-mi.html">Sobre mi</a>
-            </div>
-
-            <div class="social-col">
                 <h1 id="esp-text">Redes Sociales</h1>
-                <h1 id="english-text">Social media</h1>
-                <div class="container">
-                    <a href="https://www.instagram.com/salvatp_96/" target="_blank"><box-icon name='instagram-alt' type='logo' color='#ffffff'></box-icon></i></a>
-                    <a href="https://www.linkedin.com/in/salvatomas96/" target="_blank"><box-icon name='linkedin-square' type='logo' color='#ffffff'></box-icon></i></a>
-                    <a href="https://github.com/SalvaTP96" target="_blank"><box-icon name='github' type='logo' color='#ffffff' ></box-icon></i></a>
-                </div>
+                <a id="esp-text" href="index.html">Github</a>
+                <a id="esp-text" href="trabajos.html">Linkedin</a>
+                <a id="esp-text" href="contacto.html">Instagram</a>
             </div>
 
             <div class="contact-col">
                 <h1 id="esp-text">Mi correo</h1>
-                <h1 id="english-text">My email</h1>
                 <div class="email">
                     <box-icon name='envelope' color='#ffffff' ></box-icon>
                     <p>salvatp96@outlook.es</p>
@@ -231,15 +230,8 @@
             </div>
 
         </div>
+
     </footer>
-
-    <script src="script-imagen-principal.js"></script>
-    <script src="script-english-mode.js"></script>
-    <script src="script-img-volteo.js"></script>
-
-
-
-
         
 </body>
     
