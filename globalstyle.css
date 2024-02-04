@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background: linear-gradient(45deg, rgb(0, 0, 0), black, orange, black);
+    background: linear-gradient(45deg, rgb(0, 0, 0), black, #132b51, #132b51);
     background-size: 200% 200%;
     position: relative;
     animation: cambiar 10s ease infinite;
@@ -35,7 +35,7 @@ body{
 }
 
 .navbar h2{
-    color:#ffb742;
+    color:#719af4;
     font-weight: 600;
 }
 
@@ -73,7 +73,7 @@ body{
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background: #EDAA18;
+    background: #719af4;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform .4s ease-in-out;
@@ -91,7 +91,7 @@ body{
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
-    background: #fb8c00;
+    background: #2e64c8;
     font-size: 16px;
     cursor: pointer;
     transition: color 0.5s ease-in;
@@ -113,14 +113,14 @@ body{
 .hire-btn::before{
     top: -11em;
     left: 50%;
-    background: #ffa513;
+    background: #4b7af1;
     animation: wave 4s ease-in infinite;
 }
 
 .hire-btn::after{
     top: -11em;
     left: 55%;
-    background: #ffb742;
+    background: #719af4;
     animation: wave 3s ease-in infinite;
 }
 
@@ -140,7 +140,7 @@ body{
 }
 
 .hire-btn:hover{
-    background: #fb8c00;
+    background: #2e64c8;
 }
 
 
@@ -157,7 +157,7 @@ footer .start{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    background-color: #ffb742;
+    background-color: #719af4;
     padding: 30px 25px;
     border-radius: 15px;
     width: 70%;
@@ -197,8 +197,8 @@ footer .start button{
 }
 
 footer .start button:hover{
-    background-color: #fb8c00;
-    border-color: #fb8c00;
+    background-color: #2e64c8;
+    border-color: #2e64c8;
    
 }
 
@@ -216,7 +216,7 @@ footer .cols .about-cols{
 }
 
 footer .cols h1{
-    color: #ffb742;
+    color: #719af4;
     margin-bottom: 20px;
     margin-top: 30px;
 }
@@ -240,7 +240,7 @@ footer .cols .links-col a{
 }
 
 footer .cols .links-col a:hover{
-    color: #ffb742;
+    color: #719af4;
 }
 footer .cols .social-col{
     flex: 3;
@@ -261,7 +261,7 @@ footer .cols .social-col .container a box-icon{
 }
 
 footer .cols .social-col box-icon:hover{
-    background-color: #ffa513;
+    background-color: #7194fa;
 }
 
 footer .cols .contact-col{
