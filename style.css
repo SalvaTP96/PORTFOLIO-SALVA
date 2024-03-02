@@ -616,8 +616,20 @@ footer .cols .contact-col .email p{
 }
 
 @media screen and (max-width:450px){
+    .navbar ul{
+        gap: 14px;
+        padding: 12px 28px;
+    }
+
     .main p.title{
         font-size: 28px;
+    }
+
+    .main .enlaces{
+        gap: 30px;
+    }
+    .main .enlaces svg{
+        width: 50px;
     }
 
     .trabajos .proyecto .contenido-proyecto img{
@@ -640,12 +652,7 @@ footer .cols .contact-col .email p{
         height: 250px;
     }
 
-    .main .enlaces{
-        gap: 30px;
-    }
-    .main .enlaces svg{
-        width: 50px;
-    }
+    
 
     .trabajos .proyecto .contenido-proyecto img{
         width: 350px;
