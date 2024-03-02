@@ -129,7 +129,6 @@ body{
 }
 
 .main .enlaces a svg{
-    border-radius: 15px;
     transition: all .3s ease;
 }
 
