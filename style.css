@@ -128,18 +128,12 @@ body{
     margin-top: 5%;
 }
 
-.main .enlaces a box-icon{
-    color: #ffffff;
-    height: 60px;
-    width: 60px;
-    background-color: #292b2e;
-    border-radius: 10px;
-    border: 3px solid transparent;
+.main .enlaces a svg{
+    border-radius: 15px;
     transition: all .3s ease;
 }
 
-.main .enlaces a:hover box-icon{
-
+.main .enlaces a:hover svg{
     transform: scale(1.2);
 }
 
@@ -214,7 +208,7 @@ body{
     transition: color 0.3s ease;
 }
 
-.trabajos{
+.trabajos, .sobre-mi, .contacto{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -224,7 +218,7 @@ body{
     max-width: 1400px;
 }
 
-.trabajos h1 {
+.title-sections {
     color: white;
     padding: 20px;
     margin-top: 50px;
@@ -311,59 +305,7 @@ body{
 
 .trabajos .proyecto .contenido-proyecto .texto-proyecto .items-proyecto{
     display: flex;
-}
-
-.skills{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 50px;
-    max-width: 1920px;
-    margin: 0 auto;
-    margin-top: 100px;
-    height: 400px;
-}
-
-.skills .left{
-    width: 680px;
-}
-
-.skills .left .info h1{
-    color: #fff;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.skills .left .info p{
-    color: #fff;
-    font-size: 14px;
-}
-
-
-.skills .right{
-    width: 420px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skills .right .item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #383e45;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    transition: .6s;
-}
-
-.skills .right .item box-icon{
-    width: 44px;
-    height: 44px;
+    gap: 30px;
 }
 
 footer{
@@ -502,23 +444,6 @@ footer .cols .contact-col .email p{
         transform: rotate(0deg);
     }
 
-    .skills{
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .skills .left{
-        width: 500px;
-    }
-
-    .skills .left .info h3{
-        font-size: 22px;
-    }
-
-    .skills .left .info p{
-        font-size: 12px;
-    }
-
     footer{
         margin-top: 150px;
     }
@@ -587,10 +512,6 @@ footer .cols .contact-col .email p{
         flex-basis: 100%;
     }
 
-    .about{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width:650px) {
@@ -631,7 +552,7 @@ footer .cols .contact-col .email p{
         font-size: 13px;
     }
 
-    .trabajos h1{
+    .title-sections{
         font-size: 1.5em;
         margin-bottom: 100px;
     }
@@ -652,15 +573,6 @@ footer .cols .contact-col .email p{
 
     .trabajos .proyecto .contenido-proyecto .texto-proyecto{
         font-size: 0.9rem;
-    }
-
-    .skills{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .skills .right{
-        justify-content: space-between;
     }
 
     footer .start{
