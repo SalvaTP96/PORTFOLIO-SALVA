@@ -369,7 +369,6 @@ footer .start button:hover{
 footer .cols{
     display: flex;
     justify-content: space-around;
-    text-align: center;
 }
 
 footer .cols h1{
@@ -389,7 +388,6 @@ footer .cols .about-cols p{
 
 footer .cols .links-col a{
     display: flex;
-    justify-content: center;
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
@@ -403,8 +401,6 @@ footer .cols .links-col a:hover{
 
 footer .cols .contact-col .email{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     color: white;
 }
@@ -417,7 +413,7 @@ footer .cols .contact-col .email p{
     font-size: 16px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
 
     .main img{
         width: 400px;
@@ -464,13 +460,19 @@ footer .cols .contact-col .email p{
 
     footer .cols{
         flex-direction: column;
-    
+        display: flex;
+        align-items: start;
+        text-align: start;
+    }
+
+    footer .cols a{
+        display: flex;
     }
 
     
 }
 
-@media screen  and (max-width: 780px) {
+@media screen  and (max-width: 1024px) {
 
     .navbar ul li a{
         font-size: 20px;
@@ -530,6 +532,10 @@ footer .cols .contact-col .email p{
         font-size: 16px;
     }
 
+    .main{
+        margin-top: 100px;
+    }
+
     .main h1{
         font-size: 1.5rem;
     }
@@ -541,11 +547,13 @@ footer .cols .contact-col .email p{
     .main img{
         width: 300px;
         height: 300px;
+        margin-top: 50px;
     }
 
     .main .enlaces{
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 50px;
     }
 
     .guarantee .item .info p{
@@ -610,6 +618,33 @@ footer .cols .contact-col .email p{
 @media screen and (max-width:450px){
     .main p.title{
         font-size: 28px;
+    }
+
+    .trabajos .proyecto .contenido-proyecto img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:400px){
+
+    .navbar ul{
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    .main p.title{
+        font-size: 26px;
+    }
+
+    .main img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main .enlaces{
+        gap: 30px;
+    }
+    .main .enlaces svg{
+        width: 50px;
     }
 
     .trabajos .proyecto .contenido-proyecto img{
