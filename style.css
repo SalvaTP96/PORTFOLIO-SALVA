@@ -641,7 +641,7 @@ footer .cols .contact-col .email p{
 
     .navbar ul{
         gap: 10px;
-        padding: 10px 15px;
+        padding: 10px 12px;
     }
     .main p.title{
         font-size: 26px;
@@ -655,8 +655,9 @@ footer .cols .contact-col .email p{
     
 
     .trabajos .proyecto .contenido-proyecto img{
-        width: 350px;
+        width: 300px;
     }
+
 }
 
 
