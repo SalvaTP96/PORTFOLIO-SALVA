@@ -125,6 +125,8 @@ body{
     margin-right: 5%;
     padding: 10px;
     margin-top: 5%;
+    margin-bottom: 50px;
+
 }
 
 .main .enlaces a svg{
@@ -136,14 +138,15 @@ body{
 }
 
 .guarantee{
-    margin: 50px auto;
+    margin: 100px auto 100px auto;
     padding: 0 50px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     gap: 24px;
-    width: 70%;
+    width: 100%;
     height: 200px;
+    max-width: 1300px;
 }
 
 .guarantee .item{
@@ -206,21 +209,21 @@ body{
     transition: color 0.3s ease;
 }
 
-.trabajos, .sobre-mi, .contacto{
+.trabajos, .sobre-mi, .habilidades{
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 50px;
-    max-width: 1400px;
+    max-width: 1300px;
 }
 
 .title-sections {
     color: white;
     padding: 20px;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     font-size: 2.4rem;
     align-items: center;  
     display: flex;  
@@ -304,6 +307,37 @@ body{
 .trabajos .proyecto .contenido-proyecto .texto-proyecto .items-proyecto{
     display: flex;
     gap: 30px;
+}
+
+.sobre-mi .texto{
+    border-left: 4px outset #719af4;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.sobre-mi p{
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.habilidades .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.habilidades .item{
+    transition: .5s;
+}
+
+.habilidades .item svg{
+    width: 40px;
+}
+
+.habilidades .item:hover{
+    transform: scale(1.2);
 }
 
 footer{
@@ -420,7 +454,6 @@ footer .cols .contact-col .email p{
     .guarantee{
         flex-wrap: wrap;
         gap: 10px;
-        margin-top: 0px;
         width: 98%;
         margin-left: 1%;
         margin-right: 1%;
@@ -581,6 +614,15 @@ footer .cols .contact-col .email p{
         font-size: 0.9rem;
     }
 
+    .sobre-mi .texto{
+        padding: 25px;
+    }
+
+    .sobre-mi p{
+        font-size: .9rem;
+    
+    }
+
     footer .start{
         top: -8%;
     }
@@ -632,6 +674,11 @@ footer .cols .contact-col .email p{
 
     .trabajos .proyecto .contenido-proyecto img{
         width: 350px;
+    }
+
+    .habilidades .items{
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
